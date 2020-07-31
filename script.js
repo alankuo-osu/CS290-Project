@@ -48,7 +48,7 @@ function changeSlide(delta, clicked) {
 // Function for underlining currently active page in nav bar
 function navUnderline() {
 	// Need to change to pathname
-	var currentUrl = window.location.href;
+	var currentUrl = window.location;
 	var navLinks = document.getElementById('navbar').getElementsByTagName('a');
 	for (let link of navLinks) {
 		if (currentUrl == link.getAttribute('href')) {
@@ -162,6 +162,5 @@ function rotate(triangle, textContent) {
 }
 
 navUnderline();
-console.log(window.location.pathname)
 
 
