@@ -49,8 +49,10 @@ function changeSlide(delta, clicked) {
 function navUnderline() {
 	// Need to change to pathname
 	var currentUrl = window.location;
+	console.log(currentUrl)
 	var navLinks = document.getElementById('navbar').getElementsByTagName('a');
 	for (let link of navLinks) {
+		console.log(link.getAttribute('href'))
 		if (currentUrl == link.getAttribute('href')) {
 			link.style.textDecoration = "underline"
 		}
