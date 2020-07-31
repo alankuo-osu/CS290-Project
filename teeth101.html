@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teeth 101</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Header with Logo -->
+<div class="header">
+  <a href="index.html"><img src="Images/logo.png"></a>
+</div>
+<!-- Navbar  -->
+<div id="navbar">
+  <a href="index.html">Home</a>
+  <a href="file:///Users/alankuo/Dropbox/OSU%20CS/CS%20290/Project/teeth101.html">Teeth 101</a>
+  <a href="dentists.html">Dentists!</a>
+  <a href="">Tooth TLC</a>
+  <a href="">Find a Dentist</a>
+</div>
+<!-- Content -->
+<div class="content">
+	<h1>All about your teeth!</h1>
+	<p>Click on each tab below to learn more about your teeth and some common tooth problems</p>
+  <div class ="tabHeader">
+    <button class="tabButton" id="anatomy" onclick="changeTab1('anatomy')">What's in a tooth?</button>
+    <button class="tabButton" id="cavities" onclick="changeTab1('cavities')">Uh oh...Cavities!</button>
+    <button class="tabButton" id="other" onclick="changeTab1('other')">Other Tooth Problems</button>
+  </div>
+  <div class ="tabContent" id ="anatomyContent">
+    <div class = "contentPic">
+      <p><img src="Images/tooth_anatomy.png" alt="Diagram of tooth anatomy"></p>
+      <p>Blausen.com staff (2014). "Medical gallery of Blausen Medical 2014". WikiJournal of Medicine 1 (2). DOI:10.15347/wjm/2014.010. ISSN 2002-4436. </p>
+    </div>
+    <div class="contentText">
+      <h1>THIS DIV HAS A SCROLLBOX</h1>
+      <h2>So, what is a cavity?</h2>
+      <p>A cavity is an area of your tooth that has been damaged by bacteria in your mouth, in combination with other factors such as sugary and acidic drinks/foods and poor hygiene. What basically happens is the bacteria feed on the food and sugars that you eat, producing an acid. This acid then starts to weaken and break down the enamel of your tooth, eventually leading to an area of physical damage. When the area of damage is small, we often don't feel any pain or sensitivity. It is only when the damage progresses into the dentin and close to the pulp that we start feeling pain.</p>
+      <p>Very small areas of breakdown can often be reversed 
+    </div>
+  </div>
+  <div class ="tabContent" id = "cavitiesContent">
+    <div class="contentPic">
+      <p><img src ="Images/cavity_cropped.gif" alt="Image created by ADuran and is licensed through CC BY-SA 3.0"></p>
+    <p>Image created by ADuran and is licensed through CC BY-SA 3.0 </p>
+  </div>
+    <div class="contentText">
+      <h1>THIS DIV HAS A SCROLLBOX</h1>
+      <h2>So, what is a cavity?</h2>
+      <p>A cavity is an area of your tooth that has been damaged by bacteria in your mouth, in combination with other factors such as sugary and acidic drinks/foods and poor hygiene. What basically happens is the bacteria feed on the food and sugars that you eat, producing an acid. This acid then starts to weaken and break down the enamel of your tooth, eventually leading to an area of physical damage. When the area of damage is small, we often don't feel any pain or sensitivity. It is only when the damage progresses into the dentin and close to the pulp that we start feeling pain.</p>
+      <p>Very small areas of breakdown can often be reversed 
+    </div>
+  </div>
+  <div class ="tabContent" id = "otherContent">
+    <div class="contentPic">
+      <p><img src ="Images/fractured_tooth.jpg" alt="Image created by James Heilman, MD and is licensed through CC BY-SA 3.0"></p>
+    <p>Image created by James Heilman, MD and is licensed through CC BY-SA 3.0</p>
+  </div>
+    <div class="contentText">
+      <h1>THIS DIV HAS A SCROLLBOX</h1>
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+  </div>
+  <h1>and how dentists can fix them!</h1>
+  <p>Check out each tab below to learn more about treatments for common tooth problems</p>
+
+  <div class ="tabHeader">
+    <button class="tabButton" id="fillings" onclick="changeTab2('fillings')">Fillings</button>
+    <button class="tabButton" id="crowns" onclick="changeTab2('crowns')">Crowns</button>
+    <button class="tabButton" id="extractions" onclick="changeTab2('extractions')">Extractions</button>
+    <button class="tabButton" id="braces" onclick="changeTab2('braces')">Braces</button>
+  </div>
+  <div class ="tabContent" id ="fillingsContent">
+    <div class = "contentPic"><img src="Images/tooth_filling.jpg" alt="Image was created by HROP and is in the public domain."></div>
+    <div class="contentText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+  </div>
+  <div class ="tabContent" id = "crownsContent">
+    <div class="contentPic"><img src ="Images/cavity_cropped.gif" alt="Image created by ADuran and is licensed through CC BY-SA 3.0"></div>
+    <div class="contentText">
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+  </div>
+  <div class ="tabContent" id = "extractionsContent">
+    <div class="contentPic"><img src ="Images/fractured_tooth.jpg" alt="Image created by James Heilman, MD and is licensed through CC BY-SA 3.0"></div>
+    <div class="contentText">
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+  </div>
+  <div class ="tabContent" id = "bracesContent">
+    <div class="contentPic"><img src ="Images/fractured_tooth.jpg" alt="Image created by James Heilman, MD and is licensed through CC BY-SA 3.0"></div>
+    <div class="contentText">
+      BRACES
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+  </div>
+  <p>test</p>
+</div>
+
+
+<!-- Fixed Footer -->
+<div id="footer">Oregon State University - CS 290 Project. Icons made by <a target="_blank" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and <a target="_blank" href="https://www.flaticon.com/authors/darius-dan" title="Darius Dan">Darius Dan</a> from <a target="_blank" href="https://www.flaticon.com/" title="Flaticon">Flaticon</a>. Other images sourced from <a target="_blank" href="https://pixabay.com/">Pixabay</a>.</div>
+<script src="script.js"></script>
+
+</body>
+</html>

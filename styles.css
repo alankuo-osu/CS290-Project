@@ -1,0 +1,362 @@
+
+body{
+	margin:0px;
+	font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  padding:0;
+  margin:0;
+}
+
+
+li {
+  margin: 0;
+  padding: 25px 0 25px 45px;
+  list-style: none;
+  background-image: url('Images/tooth_bullet_point.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 35px;
+}
+
+dt {
+  font-weight:bold;
+  margin-top:15px;
+}
+
+dd {
+  font-weight:normal;
+  margin:0;
+  padding:0;
+}
+
+fieldset {
+  padding-bottom:0px;
+}
+
+/*Header and Nav Bar Styles*/
+.header {
+  padding: 0.5em;
+  text-align: center;
+}
+.header img{
+	width:100%;
+	max-width:30em;
+}
+#navbar {
+	position:sticky;
+  top:0;
+  overflow: hidden;
+  background-color: #0099ff;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  text-align:center;
+  z-index: 1;
+}
+
+
+#navbar a {
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  padding-left:0.75em;
+  padding-right:0.75em;
+  text-decoration: none;
+  opacity:1;
+  transition:0.3s ease;
+  font-weight:bold;
+
+}
+
+#navbar a:hover {
+  opacity:0.7;
+
+}
+
+.content {
+	padding:1em;
+	padding-bottom: 2em;
+  margin:auto;
+  width:75%;
+}
+
+.content a {
+  text-decoration: none;
+  color: #0099ff;
+  transition:0.1s ease;
+}
+
+.content a:hover {
+  color:#66c2ff;
+  text-decoration: underline;
+}
+
+/* Photo Carousel*/
+
+.slidesContainer {
+	max-width:1000px;
+	margin:auto;
+	position:relative;
+	overflow:hidden;
+	padding:0;
+  margin-top:10px;
+}
+
+.slidesContainer img {
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	max-width:100%;
+	max-height:100%;
+	width:auto;
+	overflow:hidden;
+  border-radius: 5px;
+}
+
+#slide1 {
+	opacity:100;
+	transition: opacity 3s ease;
+	height:auto;
+}
+
+#slide2 {
+	height:0;
+	opacity:0;
+	transition: opacity 3s ease;
+}
+
+#slide3 {
+	height:0;
+	opacity:0;
+	transition: opacity 3s ease;
+}
+
+.captions{
+  position: absolute;
+  bottom:0%;
+  right:0%;
+  background:rgb(224,224,224,0.6);
+  font-size:25px;
+  padding:5px 10px;
+  border-radius:5px;
+}
+
+#caption1 {
+  opacity:100%;
+}
+
+#caption2 {
+  opacity:0%;
+}
+
+#caption3 {
+  opacity:0%;
+}
+
+.slideButtons {
+  position: absolute;
+  top: 50%;
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top:-25px;
+  transition: 0.6s ease;
+  opacity:40%;
+  margin:0;
+}
+
+#leftButton {
+
+  left:0%;
+
+}
+#rightButton {
+
+  right:0%;
+
+}
+
+#rightButton:hover, #leftButton:hover {
+	opacity:80%;
+}
+
+
+.tabHeader {
+  overflow:hidden;
+  background-color:#0099ff;
+  margin:0;
+  width:100%;
+  border:1px solid #ccc;
+  border-bottom:0;
+  border-top:0;
+  margin:auto;
+}
+
+.tabButton {
+  background-color:#0099ff;
+  margin:0;
+  cursor: pointer;
+  border:none;
+  outline:none;
+  font-size:16px;
+  color:white;
+  font-weight:bold;
+  padding: 5px 10px;
+  transition: 0.2s;
+  float:left;
+}
+
+.tabButton:hover {
+  background-color: #66c2ff!important;
+}
+
+#anatomy {
+  background-color: #33adff;
+}
+
+.tabContent {
+  border:1px solid #ccc;
+  margin-top:0;
+  width:100%;
+  overflow:hidden;
+  padding:0;
+  margin:auto;
+  text-align:center;
+  height:450px;
+
+}
+
+.tabContent img {
+  max-height:300px;
+  max-width:100%;
+  margin:auto;
+}
+
+.contentPic {
+  width:50%;
+  margin:auto;
+  padding:10px;
+  height:250px;
+  text-align:center;
+  position:relative;
+  display:inline-block;
+  font-size:10px;
+}
+
+.contentPic img {
+  max-height:200px;
+  display:block;
+}
+
+.contentText {
+  width:80%;
+  margin:auto;
+  overflow:scroll;
+  max-height:150px;
+  overflow-x:hidden;
+  text-align:left;
+  padding:10px;
+  border:1px solid #d9d9d9;
+
+}
+
+
+
+#cavitiesContent {
+  display:none;
+}
+
+#otherContent {
+  display:none;
+}
+
+#fillings {
+  background-color: #33adff;
+}
+
+#crownsContent {
+  display:none;
+}
+
+#extractionsContent {
+  display:none;
+}
+
+#bracesContent {
+  display:none;
+}
+
+
+/*#results {
+  padding-top:10px;
+}*/
+
+
+.unrotated {
+  transform:rotate(0deg);
+
+}
+
+.rotated {
+  transform:rotate(90deg);
+}
+
+.dentistHeader {
+  user-select:none;
+  cursor:pointer;
+  font-size:30px;
+  font-weight:bold;
+  display:inline-block;
+  margin-bottom:10px;
+}
+
+.dentistContent {
+  padding-left:35px;
+  overflow:hidden;
+  height:0;
+}
+
+.triangle {
+  font-size:10px;
+  float:left;
+  padding: 10px
+
+}
+
+
+#generalDentist {
+
+}
+
+
+
+
+
+#footer {
+	background: #0099ff;
+	padding:5px;
+	color: #FFFFFF;
+	font-size: 12px;
+	text-align: center;
+	position:fixed;
+	bottom:0px;
+	width:100%;
+}
+
+#footer a{
+	color: #ffffff;
+	text-decoration: none;
+	opacity:1;
+	transition:0.3s;
+
+}
+
+#footer a:hover {
+	opacity:0.6;
+
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Header with Logo -->
+<div class="header">
+  <a href="index.html"><img src="Images/logo.png"></a>
+</div>
+<!-- Navbar  -->
+<div id="navbar">
+  <a href="file:///Users/alankuo/Dropbox/OSU%20CS/CS%20290/Project/index.html">Home</a>
+  <a href="teeth101.html">Teeth 101</a>
+  <a href="dentists.html">Dentists!</a>
+  <a href="">Tooth TLC</a>
+  <a href="finddentist.html">Find a Dentist</a>
+</div>
+<!-- Content -->
+<div class="content">
+  <div class="slidesContainer">
+    <img id="slide1" src="Images/dental_chair.jpg">
+    <img id="slide2" src="Images/dental_kid.jpeg">
+    <img id="slide3" src="Images/brushing_teeth.jpg">
+    <button class = "slideButtons" id ="leftButton" onclick="changeSlide(-1, 1)">&#10094;</button>
+    <button class = "slideButtons" id = "rightButton" onclick="changeSlide(+1, 1)">&#10095;</button>
+    <div class="captions" id="caption1">Learn more about how dentists fix your teeth!</div>
+    <div class="captions" id="caption2">Learn about the different types of dentists!</div>
+    <div class="captions" id="caption3">Learn how to take care of your teeth and smile!</div>
+  </div>
+  <h1>Want to learn more about your teeth? Ever wondered what's actually going on during your dental appointment?</h1>
+  <p>Welcome to <strong>Your Teeth and You!</strong>, a practical guide to teeth, dentists, and how to keep your teeth and smile in great shape.</p>
+  <ul>
+    <li>You'll find easy-to-read information about things that can go wrong and how dentists can fix them in <a href="">Teeth 101</a>.</li>
+    <li>To learn more about the types of dentists and the different treatments they do, check out <a href="">Dentists!</a></li>
+    <li>Interested in ways to take good care of your teeth? You'll find lots of information on oral hygiene and care in <a href="">Tooth TLC</a>!</li>
+    <li>We've included a tool for helping you find a dentist near you. Check it out <a href="">here!</a></li>
+  </ul>
+
+
+</div>
+<script src="script.js"></script>
+<!-- Fixed Footer -->
+<div id="footer">Oregon State University - CS 290 Project. Icons made by <a target="_blank" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and <a target="_blank" href="https://www.flaticon.com/authors/darius-dan" title="Darius Dan">Darius Dan</a> from <a target="_blank" href="https://www.flaticon.com/" title="Flaticon">Flaticon</a>. Other images sourced from <a target="_blank" href="https://pixabay.com/">Pixabay</a>.</div>
+</body>
+</html>
