@@ -163,5 +163,6 @@ function rotate(triangle, textContent) {
 }
 
 navUnderline();
+console.log(window.location.pathname)
 
 
