@@ -2,11 +2,10 @@
 // Simple picture carousel with fading animation
 
 // Checking if currently on home page
-if (window.location.pathname == "/CS290-Project/index.html") {
+if (window.location == "https://alankuo-osu.github.io/CS290-Project/index.html") {
 	var curSlide = 1;
 	var interval_id = setInterval(function(){changeSlide(1,0);}, 3000);
 }
-// Setting current slide
 
 
 // Starting automatic image switching and saving interval id
