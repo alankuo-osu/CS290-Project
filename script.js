@@ -47,9 +47,9 @@ function navUnderline() {
 			link.style.textDecoration = "underline";
 		}
 	}
-	// if (window.location.pathname = "/CS290-Project/") {
-		// document.getElementById("homeLink").style.textDecoration = "underline";
-	// }
+	if (window.location.pathname = "/CS290-Project/") {
+		document.getElementById("homeLink").style.textDecoration = "underline";
+	}
 }
 
 // Functions for tabbed content. Appearance of tabs inspired by https://www.w3schools.com/howto/howto_js_tabs.asp.
