@@ -3,7 +3,7 @@
 
 // Checking if currently on home page
 // Set current slide, start automatic switching
-if (window.location == "https://alankuo-osu.github.io/CS290-Project/index.html" or window.location =="https://alankuo-osu.github.io/CS290-Project") {
+if (window.location == "https://alankuo-osu.github.io/CS290-Project/index.html" or window.location =="https://alankuo-osu.github.io/CS290-Project/") {
 	var curSlide = 1;
 	var interval_id = setInterval(function(){changeSlide(1,0);}, 3000);
 }
@@ -41,14 +41,11 @@ function changeSlide(delta, clicked) {
 // Function for underlining currently active page in nav bar
 function navUnderline() {
 	var currentUrl = window.location;
-	var navLinks = document.getElementById('navbar').getElementsByTagName('a');
+	var navLinks = document/.getElementById('navbar').getElementsByTagName('a');
 	for (let link of navLinks) {
 		if (currentUrl == link.getAttribute('href')) {
-			link.style.textDecoration = "underline";
+			link.style.textDecoration = "underline"
 		}
-	}
-	if (window.location.pathname = "/") {
-		document.getElementById("homeLink").style.textDecoration = "underline";
 	}
 }
 
