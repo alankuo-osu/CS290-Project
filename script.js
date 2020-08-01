@@ -47,7 +47,7 @@ function navUnderline() {
 			link.style.textDecoration = "underline";
 		}
 	}
-	if (window.location.pathname = "/") {
+	if (window.location.pathname = "/CS290/") {
 		document.getElementById("homeLink").style.textDecoration = "underline";
 	}
 }
