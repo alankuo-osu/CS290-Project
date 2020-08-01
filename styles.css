@@ -137,7 +137,7 @@ fieldset {
   bottom:0%;
   right:0%;
   background:rgb(224,224,224,0.6);
-  font-size:25px;
+  font-size:1.25em;
   padding:5px 10px;
   border-radius:5px;
 }
@@ -306,7 +306,7 @@ fieldset {
   transform:rotate(90deg);
 }
 
-.dentistHeader {
+.textHeader {
   -webkit-user-select: none;
   -moz-user-select: none; 
   -ms-user-select: none;
@@ -316,9 +316,10 @@ fieldset {
   font-weight:bold;
   display:inline-block;
   margin-bottom:10px;
+  color:#0099ff;
 }
 
-.dentistContent {
+.textContent {
   padding-left:35px;
   overflow:hidden;
   height:0;
