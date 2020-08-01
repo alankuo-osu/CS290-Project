@@ -2,14 +2,11 @@
 // Simple picture carousel with fading animation
 
 // Checking if currently on home page
+// Set current slide, start automatic switching
 if (window.location == "https://alankuo-osu.github.io/CS290-Project/index.html") {
 	var curSlide = 1;
 	var interval_id = setInterval(function(){changeSlide(1,0);}, 3000);
 }
-
-
-// Starting automatic image switching and saving interval id
-
 
 // Function for changing slide. Includes parameters for number of slides to change and whether change was done manually.
 function changeSlide(delta, clicked) {
@@ -29,13 +26,10 @@ function changeSlide(delta, clicked) {
 	document.getElementById("slide"+prevSlide).style.height = "0";
 	document.getElementById("caption"+prevSlide).style.opacity = "0%";
 	
-
-
 	// Showing new slide
 	document.getElementById("slide"+curSlide).style.opacity = "100%";
 	document.getElementById("slide"+curSlide).style.height= "auto";
 	document.getElementById("caption"+curSlide).style.opacity = "100%";
-
 
 	// Resetting timer for automatic switching if change was done manually
 	if (clicked == 1) {
@@ -49,10 +43,8 @@ function changeSlide(delta, clicked) {
 function navUnderline() {
 	// Need to change to pathname
 	var currentUrl = window.location;
-	console.log(currentUrl)
 	var navLinks = document.getElementById('navbar').getElementsByTagName('a');
 	for (let link of navLinks) {
-		console.log(link.getAttribute('href'))
 		if (currentUrl == link.getAttribute('href')) {
 			link.style.textDecoration = "underline"
 		}
@@ -64,7 +56,6 @@ function changeTab1(newTab) {
 	document.getElementById(newTab).style.backgroundColor ="#33adff";
 	document.getElementById(curTab +"Content").style.display="none"
 	document.getElementById(newTab+"Content").style.display ="block";
-	// document.getElementById(curTab+"Content").display ="none";
 	curTab = newTab
 }
 
@@ -74,33 +65,27 @@ function changeTab2(newTab2) {
 	document.getElementById(newTab2).style.backgroundColor ="#33adff";
 	document.getElementById(curTab2 +"Content").style.display="none"
 	document.getElementById(newTab2+"Content").style.display ="block";
-	// document.getElementById(curTab+"Content").display ="none";
 	curTab2 = newTab2
 }
 
 
-// bing search api key: fb9c3aca1d37437b9eb1842d4ae68c6e
 
+// API key and url for Bing Search
 var apiKey = 'fb9c3aca1d37437b9eb1842d4ae68c6e'
 var searchUrl = 'https://api.cognitive.microsoft.com/bing/v7.0/localbusinesses/search?mkt=en-US&count=5&q='
 
-// if (window.location.pathname == "/Users/alankuo/Dropbox/OSU%20CS/CS%20290/Project/finddentist.html") {
-	// document.addEventListener('DOMContentLoaded', searchButton())
-// }
-
+// Function for making request
 function searchDentist() {
 	let searchReq = new XMLHttpRequest();
 		let dentistType = document.getElementById('dentistType').value;
 		let city = document.getElementById('City').value;
 		let state = document.getElementById('state').value;
 		let requestUrl = searchUrl + dentistType + "+" + city+"+"+state
-
 		if (!city) {
-			alert("Please fill out both fields!");
+			alert("Please fill out the city field!");
 			event.preventDefault();
 			return false;
 		}
-
 
 		searchReq.open("GET", requestUrl, true);
 		searchReq.setRequestHeader ("Ocp-Apim-Subscription-Key",apiKey);
@@ -124,6 +109,7 @@ function searchDentist() {
 					address2.textContent = business['address']['addressLocality'] + ", " + business['address']['addressRegion'] + " " + business['address']['postalCode'];
 					var phone = document.createElement('dd');
 					phone.textContent = business['telephone'];
+
 					busName.appendChild(website);
 					busName.appendChild(address1);
 					busName.appendChild(address2);
@@ -138,12 +124,12 @@ function searchDentist() {
 				resultDiv.textContent = "No results found.";
 			}
 		});
-
 		searchReq.send(null)
 		event.preventDefault();
 
 }
 
+// Function for rotating triangle and showing text content for expandable text
 function rotate(triangle, textContent) {
 	var curTriangle = document.getElementById(triangle)
 	var curText = document.getElementById(textContent)
@@ -152,8 +138,6 @@ function rotate(triangle, textContent) {
 		curText.style.height="0"
 		curText.style.paddingTop="0px"
 		curText.style.paddingBottom="0px"
-
-
 	}
 	else {
 		curTriangle.classList.add('rotated')
@@ -163,6 +147,7 @@ function rotate(triangle, textContent) {
 
 }
 
+// Call to Nav underline function
 navUnderline();
 
 
