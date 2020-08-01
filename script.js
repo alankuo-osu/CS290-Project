@@ -3,7 +3,7 @@
 
 // Checking if currently on home page
 // Set current slide, start automatic switching
-if ((window.location == "https://alankuo-osu.github.io/CS290-Project/index.html") || (window.location =="https://alankuo-osu.github.io/CS290-Project/")) {
+if ((window.location == "https://alankuo-osu.github.io/CS290-Project/index.html") || (window.location =="https://alankuo-osu.github.io/CS290-Project")) {
 	var curSlide = 1;
 	var interval_id = setInterval(function(){changeSlide(1,0);}, 3000);
 }
@@ -47,7 +47,7 @@ function navUnderline() {
 			link.style.textDecoration = "underline";
 		}
 	}
-	if (window.location.pathname = "/CS290-Project/") {
+	if (window.location.pathname = "/CS290/") {
 		document.getElementById("homeLink").style.textDecoration = "underline";
 	}
 }
