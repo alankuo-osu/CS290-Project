@@ -46,7 +46,7 @@ function navUnderline() {
 		if (currentUrl == link.getAttribute('href')) {
 			link.style.textDecoration = "underline"
 		}
-		elif (currentUrl == "https://alankuo-osu.github.io/CS290-Project/") {
+		else if (currentUrl == "https://alankuo-osu.github.io/CS290-Project/") {
 			document.getElementById('homeLink').style.textDecoration = "underline"
 		}
 	}
