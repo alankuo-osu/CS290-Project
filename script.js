@@ -21,7 +21,6 @@ function changeSlide(delta, clicked) {
 	}
 
 	// Hiding previous slide and re-setting opacity
-
 	document.getElementById("slide"+prevSlide).style.opacity = "0%";
 	document.getElementById("slide"+prevSlide).style.height = "0";
 	document.getElementById("caption"+prevSlide).style.opacity = "0%";
@@ -41,7 +40,6 @@ function changeSlide(delta, clicked) {
 
 // Function for underlining currently active page in nav bar
 function navUnderline() {
-	// Need to change to pathname
 	var currentUrl = window.location;
 	var navLinks = document.getElementById('navbar').getElementsByTagName('a');
 	for (let link of navLinks) {
@@ -50,6 +48,9 @@ function navUnderline() {
 		}
 	}
 }
+
+// Functions for tabbed content. Appearance of tabs inspired by https://www.w3schools.com/howto/howto_js_tabs.asp.
+// Custom javascript.
 var curTab = 'anatomy'
 function changeTab1(newTab) {
 	document.getElementById(curTab).style.backgroundColor = "#0099ff";
@@ -74,7 +75,7 @@ function changeTab2(newTab2) {
 var apiKey = 'fb9c3aca1d37437b9eb1842d4ae68c6e'
 var searchUrl = 'https://api.cognitive.microsoft.com/bing/v7.0/localbusinesses/search?mkt=en-US&count=5&q='
 
-// Function for making request
+// Function for making GET request
 function searchDentist() {
 	let searchReq = new XMLHttpRequest();
 		let dentistType = document.getElementById('dentistType').value;
@@ -129,7 +130,7 @@ function searchDentist() {
 
 }
 
-// Function for rotating triangle and showing text content for expandable text
+// Function for rotating triangle and showing text content for expandable text.
 function rotate(triangle, textContent) {
 	var curTriangle = document.getElementById(triangle)
 	var curText = document.getElementById(textContent)
