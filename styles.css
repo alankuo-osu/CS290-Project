@@ -1,4 +1,4 @@
-
+/*Overall Styles*/
 body{
   margin:0px;
   font-family: 'Roboto', sans-serif;
@@ -8,7 +8,6 @@ ul {
   padding:0;
   margin:0;
 }
-
 
 li {
   margin: 0;
@@ -40,10 +39,12 @@ fieldset {
   padding: 0.5em;
   text-align: center;
 }
+
 .header img{
   width:100%;
   max-width:30em;
 }
+
 #navbar {
   position:sticky;
   top:0;
@@ -91,7 +92,6 @@ fieldset {
 }
 
 /* Styles for photo Carousel*/
-
 .slidesContainer {
   max-width:1000px;
   margin:auto;
@@ -169,21 +169,18 @@ fieldset {
 }
 
 #leftButton {
-
   left:0%;
-
 }
+
 #rightButton {
-
   right:0%;
-
 }
 
 #rightButton:hover, #leftButton:hover {
   opacity:0.8;
 }
 
-
+/*Styles for tabbed content*/
 .tabHeader {
   overflow:hidden;
   background-color:#0099ff;
@@ -223,10 +220,10 @@ fieldset {
   width:100%;
   overflow:hidden;
   padding:0;
-  margin:auto;
+  margin-right:auto;
+  margin-left:auto;
   text-align:center;
   height:450px;
-
 }
 
 .tabContent img {
@@ -260,7 +257,6 @@ fieldset {
   text-align:left;
   padding:5px;
   border:1px solid #d9d9d9;
-
 }
 
 #cavitiesContent {
@@ -287,8 +283,7 @@ fieldset {
   display:none;
 }
 
-/*Styles for expanding text*/
-
+/*Styles for expanding text sections*/
 .unrotated {
   transform:rotate(0deg);
 }
@@ -342,10 +337,8 @@ fieldset {
   text-decoration: none;
   opacity:1;
   transition:0.3s;
-
 }
 
 #footer a:hover {
   opacity:0.6;
-
 }
