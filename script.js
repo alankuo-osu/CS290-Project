@@ -21,14 +21,14 @@ function changeSlide(delta, clicked) {
 	}
 
 	// Hiding previous slide and re-setting opacity
-	document.getElementById("slide"+prevSlide).style.opacity = "0%";
+	document.getElementById("slide"+prevSlide).style.opacity = "0";
 	document.getElementById("slide"+prevSlide).style.height = "0";
-	document.getElementById("caption"+prevSlide).style.opacity = "0%";
+	document.getElementById("caption"+prevSlide).style.opacity = "0";
 	
 	// Showing new slide
-	document.getElementById("slide"+curSlide).style.opacity = "100%";
+	document.getElementById("slide"+curSlide).style.opacity = "1";
 	document.getElementById("slide"+curSlide).style.height= "auto";
-	document.getElementById("caption"+curSlide).style.opacity = "100%";
+	document.getElementById("caption"+curSlide).style.opacity = "1";
 
 	// Resetting timer for automatic switching if change was done manually
 	if (clicked == 1) {
