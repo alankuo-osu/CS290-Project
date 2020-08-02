@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
   <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- Header with Logo -->
 <div class="header">
-  <a href="https://alankuo-osu.github.io/CS290-Project/index.html"><img src="Images/logo.png"></a>
+  <a href="https://alankuo-osu.github.io/CS290-Project/index.html"><img src="Images/logo.png" alt="Site logo"></a>
 </div>
 <!-- Navbar  -->
 <div id="navbar">
@@ -22,9 +23,9 @@
 <!-- Content -->
 <div class="content">
   <div class="slidesContainer">
-    <img id="slide1" src="Images/dental_chair.jpg">
-    <img id="slide2" src="Images/dental_kid.jpeg">
-    <img id="slide3" src="Images/brushing_teeth.jpg">
+    <img id="slide1" src="Images/dental_chair.jpg" alt="A picture of a dental chair">
+    <img id="slide2" src="Images/dental_kid.jpeg" alt="A picture of a dentist treating a child">
+    <img id="slide3" src="Images/brushing_teeth.jpg" alt="A picture of someone brushing their teeth">
     <button class = "slideButtons" id ="leftButton" onclick="changeSlide(-1, 1)">&#10094;</button>
     <button class = "slideButtons" id = "rightButton" onclick="changeSlide(+1, 1)">&#10095;</button>
     <div class="captions" id="caption1">Learn more about how dentists fix your teeth!</div>
@@ -43,6 +44,8 @@
 </div>
 <script src="script.js"></script>
 <!-- Fixed Footer -->
-<div id="footer">Oregon State University - CS 290 Project. Icons made by <a target="_blank" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and <a target="_blank" href="https://www.flaticon.com/authors/darius-dan" title="Darius Dan">Darius Dan</a> from <a target="_blank" href="https://www.flaticon.com/" title="Flaticon">Flaticon</a>. Other images sourced from <a target="_blank" href="https://pixabay.com/">Pixabay</a>.</div>
+<div id="footer">
+  Oregon State University - CS 290 Project. Icons made by <a target="_blank" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and <a target="_blank" href="https://www.flaticon.com/authors/darius-dan" title="Darius Dan">Darius Dan</a> from <a target="_blank" href="https://www.flaticon.com/" title="Flaticon">Flaticon</a>. Other images sourced from <a target="_blank" href="https://pixabay.com/">Pixabay</a>.
+</div>
 </body>
 </html>

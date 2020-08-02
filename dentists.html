@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dentists!</title>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- Header with Logo -->
 <div class="header">
-  <a href="https://alankuo-osu.github.io/CS290-Project/index.html"><img src="Images/logo.png"></a>
+  <a href="https://alankuo-osu.github.io/CS290-Project/index.html"><img src="Images/logo.png" alt="Site logo"></a>
 </div>
 <!-- Navbar  -->
 <div id="navbar">
@@ -22,48 +23,68 @@
 <!-- Content -->
 <div class="content">
 	<h1>Learn about the different kinds of dentists!</h1>
-	<p>There are many different types of dentists that have different roles and perform different procedures. Click on the names below to learn more!</p>
-  <div class="textHeader" onclick="rotate('genTriangle', 'generalDentist')"><span id="genTriangle" class="triangle" >►</span><span>General Dentist</span></div>
+	<p>
+    There are many different types of dentists that have different roles and perform different procedures. Click on the names below to learn more!
+  </p>
+  <div class="textHeader" onclick="rotate('genTriangle', 'generalDentist')">
+    <span id="genTriangle" class="triangle" >►</span><span>General Dentist</span>
+  </div>
   <div id="generalDentist" class="textContent">
     General dentists are somewhat similar to a primary care provider in medicine. They are the dentist that you probably see the most (eg. for your cleaning/checkup appointments). General dentists are also qualified to perform <strong>all basic procedures</strong> (such as fillings, crowns, pulling teeth, whitening, etc.), and some also offer more advanced services like Invisalign and wisdom tooth extractions. Their fees may be lower for certain procedures compared to a specialist. In more difficult cases that are out of their expertise, they can refer to a specialist.
   </div>
-  <div class="textHeader" onclick="rotate('cosmeticTriangle', 'cosmeticDentist')"><span id="cosmeticTriangle" class="triangle" >►</span><span>Cosmetic Dentist</span></div>
+  <div class="textHeader" onclick="rotate('cosmeticTriangle', 'cosmeticDentist')">
+    <span id="cosmeticTriangle" class="triangle" >►</span><span>Cosmetic Dentist</span>
+  </div>
   <div id="cosmeticDentist" class="textContent">
     Cosmetic dentists are general dentists that specialize in procedures to <strong>improve the appearance of your teeth and smile</strong>. These are procedures like veneers, whitening, and composite fillings. Cosmetic dentistry is not an officially recognized specialty, and any general dentist can advertise that they are a cosmetic dentist. However, there are certifications and extra training that cosmetic dentists may have, such as being a member of the American Academy of Cosmetic Dentistry, that show their dedication to cosmetic dentistry.
   </div>
-  <div class="textHeader" onclick="rotate('endoTriangle', 'endodontist')"><span id="endoTriangle" class="triangle" >►</span><span>Endodontist</span></div>
+  <div class="textHeader" onclick="rotate('endoTriangle', 'endodontist')">
+    <span id="endoTriangle" class="triangle" >►</span><span>Endodontist</span>
+  </div>
   <div id="endodontist" class="textContent">
     Endodontists are <strong>root canal</strong> specialists. They typically only perform procedures related to the nerves of the teeth, including root canals and some other surgical procedures. Patients typically see endodontists when a tooth's nerve is damaged or dying (usually either from an infection or from trauma). Contrary to popular belief, root canals typically are not very painful. You will first be numbed and asked to open wide. The endodontist will then place a protective barrier called a <strong>rubber dam</strong> around the tooth. The rubber dam is designed to prevent bacteria and saliva from the rest of your mouth from contaminating the root canal. For the root canal itself, the endodontist will clean out the remaining nerve from your tooth (patients may experience a grinding or vibrating sensation), and then fill up the space where the nerve was with a special filler material. 
   </div>
-  <div class="textHeader" onclick="rotate('pathTriangle', 'oralPathologist')"><span id="pathTriangle" class="triangle" >►</span><span>Oral Pathologist</span></div>
+  <div class="textHeader" onclick="rotate('pathTriangle', 'oralPathologist')">
+    <span id="pathTriangle" class="triangle" >►</span><span>Oral Pathologist</span>
+  </div>
   <div id="oralPathologist" class="textContent">
     Oral pathologists are specialists in <strong>diagnosing diseases affecting the mouth and jaws</strong>. Oral pathologists will typically perform diagnostic procedures such as soft tissue biopsies or X-rays/CT scans/MRIs. Patients are usually referred to oral pathologists by other dentists when any unusual findings are noticed. If you feel that something in your mouth has changed, such as a new bump on your gums or a change in color, make sure that you mention it to your dentist to see if it might be something that needs further investigation.
   </div>
-  <div class="textHeader" onclick="rotate('surgTriangle', 'oralSurgeon')"><span id="surgTriangle" class="triangle" >►</span><span>Oral Surgeon</span></div>
+  <div class="textHeader" onclick="rotate('surgTriangle', 'oralSurgeon')">
+    <span id="surgTriangle" class="triangle" >►</span><span>Oral Surgeon</span>
+  </div>
   <div id="oralSurgeon" class="textContent">
     Oral surgeons are specialists in <strong>teeth extractions (taking out teeth) and other surgical procedures</strong>. Most people will see oral surgeons when they are having their wisdom teeth taken out, but oral surgeons also do more advanced surgeries like jaw reconstructions after accidents, implant placement, and cleft palate repairs. General dentists can handle most basic extractions, but they will typically refer more difficult cases to an oral surgeon. 
   </div>
-  <div class="textHeader" onclick="rotate('orthoTriangle', 'orthodontist')"><span id="orthoTriangle" class="triangle" >►</span><span>Orthodontist</span></div>
+  <div class="textHeader" onclick="rotate('orthoTriangle', 'orthodontist')">
+    <span id="orthoTriangle" class="triangle" >►</span><span>Orthodontist</span>
+  </div>
   <div id="orthodontist" class="textContent">
     Orthodontists are specialists in <strong>moving teeth with appliances such as braces and clear retainers</strong>. Most people get braces when they are teenagers. However, moving and straightening teeth is possible throughout life, and many adults are taking advantage of treatment with clear retainers that are less noticeable than traditional metal braces. Some companies are trying to bypass orthodontists by delivering clear retainers directly to patients at lower cost, but some patients have reported being unhappy with their results. A private practice orthodontist will typically be more responsive and willing to work with you to get the result you want.
   </div>
-  <div class="textHeader" onclick="rotate('pedsTriangle', 'pediatricDentist')"><span id="pedsTriangle" class="triangle" >►</span><span>Pediatric Dentist</span></div>
+  <div class="textHeader" onclick="rotate('pedsTriangle', 'pediatricDentist')">
+    <span id="pedsTriangle" class="triangle" >►</span><span>Pediatric Dentist</span>
+  </div>
   <div id="pediatricDentist" class="textContent">
     Pediatric dentists are specialists in doing <strong>dental procedures on kids</strong>. While many general dentists do perform treatments on children, pediatric dentists have special training and equipment for treating children with dental anxiety and special needs. Many anxious or uncooperative pediatric patients require sedation or general anesthesia to treat successfully, and a pediatric dentist is usually the best option.
   </div>
-  <div class="textHeader" onclick="rotate('perioTriangle', 'periodontist')"><span id="perioTriangle" class="triangle" >►</span><span>Periodontist</span></div>
+  <div class="textHeader" onclick="rotate('perioTriangle', 'periodontist')">
+    <span id="perioTriangle" class="triangle" >►</span><span>Periodontist</span>
+  </div>
   <div id="periodontist" class="textContent">
     Periodontists are specialists in the <strong>supporting tissues of teeth, such as the gums</strong>. P The loss of these supporting tissues, or periodontal disease, can have many effects such as loose teeth. Some studies have even linked periodontal disease to systemic health problems like heart disease. Periodontists can help slow or prevent disease progression with treatments like deep cleanings and gum surgeries. Many periodontists also perform procedures to help improve aesthetics (such as gum surgery to fix a "gummy" smile) and implant placement.
   </div>
-  <div class="textHeader" onclick="rotate('prosthTriangle', 'prosthodontist')"><span id="prosthTriangle" class="triangle" >►</span><span>Prosthodontist</span></div>
+  <div class="textHeader" onclick="rotate('prosthTriangle', 'prosthodontist')">
+    <span id="prosthTriangle" class="triangle" >►</span><span>Prosthodontist</span>
+  </div>
   <div id="prosthodontist" class="textContent">
     Prosthodontists are specialists in <strong>creating devices that help replace the form and function of missing teeth</strong>, such as dentures. While many general dentists do make dentures, prosthodontists have more training and typically handle more advanced and demanding cases. Some prosthodontists also make devices to replace other structures in the head and neck, such as devices to help in speech or even devices replacing noses and eyeballs.
   </div>
 </div>
-
 <script src="script.js"></script>
 <!-- Fixed Footer -->
-<div id="footer">Oregon State University - CS 290 Project. Icons made by <a target="_blank" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and <a target="_blank" href="https://www.flaticon.com/authors/darius-dan" title="Darius Dan">Darius Dan</a> from <a target="_blank" href="https://www.flaticon.com/" title="Flaticon">Flaticon</a>. Other images sourced from <a target="_blank" href="https://pixabay.com/">Pixabay</a>.</div>
-
+<div id="footer">
+  Oregon State University - CS 290 Project. Icons made by <a target="_blank" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and <a target="_blank" href="https://www.flaticon.com/authors/darius-dan" title="Darius Dan">Darius Dan</a> from <a target="_blank" href="https://www.flaticon.com/" title="Flaticon">Flaticon</a>. Other images sourced from <a target="_blank" href="https://pixabay.com/">Pixabay</a>.
+</div>
 </body>
 </html>

@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tooth TLC</title>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- Header with Logo -->
 <div class="header">
-  <a href="https://alankuo-osu.github.io/CS290-Project/index.html"><img src="Images/logo.png"></a>
+  <a href="https://alankuo-osu.github.io/CS290-Project/index.html"><img src="Images/logo.png" alt="Site logo"></a>
 </div>
 <!-- Navbar  -->
 <div id="navbar">
@@ -23,7 +24,9 @@
 <div class="content">
   <h1>Tooth TLC</h1>
   <p> A quick guide to keeping your smile in great condition!</p>
-  <p>Take a look at this video from the American Dental Association on how to brush your teeth, and then check out some common questions about tooth care below!
+  <p>
+    Take a look at this video from the American Dental Association on how to brush your teeth, and then check out some common questions about tooth care below!
+  </p>
   <div id="brushingVideo">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/xm9c5HAUBpY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
@@ -34,29 +37,41 @@
   <div id="question1" class="textContent">
     Most dentists recommend using a soft bristled toothbrush to avoid injuring your gums and teeth. Using a toothbrush that is too stiff or brushing with too much force can lead to gum recession (when the roots of the teeth start being exposed from the loss of gum tissue), or damage to the teeth themselves.
   </div>
-  <div class="textHeader" onclick="rotate('q2Triangle', 'question2')"><span id="q2Triangle" class="triangle" >►</span><span>Do I need to use an electric toothbrush?</span></div>
+  <div class="textHeader" onclick="rotate('q2Triangle', 'question2')">
+    <span id="q2Triangle" class="triangle" >►</span><span>Do I need to use an electric toothbrush?</span>
+  </div>
   <div id="question2" class="textContent">
     Electric toothbrushes can be more effective in keeping your teeth clean, but you can also get good results with just a normal toothbrush. The most important part is to brush thoroughly for at least two minutes.
   </div>
-  <div class="textHeader" onclick="rotate('q3Triangle', 'question3')"><span id="q3Triangle" class="triangle" >►</span><span>What kind of toothpaste should I use?</span></div>
+  <div class="textHeader" onclick="rotate('q3Triangle', 'question3')">
+    <span id="q3Triangle" class="triangle" >►</span><span>What kind of toothpaste should I use?</span>
+  </div>
   <div id="question3" class="textContent">
     As recommended by the ADA, the most important thing is to use a toothpaste containing fluoride. The specific type is not as important, as long as you like the flavor and texture. There are certain toothpastes that contain some extra ingredients, such as whitening toothpastes. Whitening toothpastes contain abrasive ingredients that help remove some surface stains. Sensitivity toothpastes contain extra ingredients that help shield any exposed areas of your teeth and reduce sensitivity. 
   </div>
-  <div class="textHeader" onclick="rotate('q4Triangle', 'question4')"><span id="q4Triangle" class="triangle" >►</span><span>Do I need to floss?</span></div>
+  <div class="textHeader" onclick="rotate('q4Triangle', 'question4')">
+    <span id="q4Triangle" class="triangle" >►</span><span>Do I need to floss?</span>
+  </div>
   <div id="question4" class="textContent">
     The ADA recommends flossing at least once a day to maintain the health of your teeth and gums. From a practical standpoint, you cannot remove all the food/sugar/plaque from between your teeth with just a toothbrush. By leaving that material there for extendec periods of time, you are increasing your risk for getting cavities between your teeth and gum disease. Some alternatives to using normal dental floss are using interdental cleaners (look like a plastic wishbone with a piece of floss) or water flossers like Waterpik. These alternatives can be easier to use in tight areas or toward the back of your mouth.
   </div>
-  <div class="textHeader" onclick="rotate('q5Triangle', 'question5')"><span id="q5Triangle" class="triangle" >►</span><span>What's the best option for whitening my teeth?</span></div>
+  <div class="textHeader" onclick="rotate('q5Triangle', 'question5')">
+    <span id="q5Triangle" class="triangle" >►</span><span>What's the best option for whitening my teeth?</span>
+  </div>
   <div id="question5" class="textContent">
     Contrary to popular opinion, teeth are not naturally pearly white. In fact, most people's teeth are normally slightly yellow or gray. If you are unsatisfied with the natural shade of your teeth you can start by using whitening toothpaste or over-the-counter whitening strips. If these are not giving you the results you want, you can ask your dentist about other options like whitening gels or light treatments. Since teeth whitening treatment can often result in sensitivity, it is usually best to start small and work your way up to stronger treatments. 
   </div>
-  <div class="textHeader" onclick="rotate('q6Triangle', 'question6')"><span id="q6Triangle" class="triangle" >►</span><span>Can the food I eat give me cavities?</span></div>
+  <div class="textHeader" onclick="rotate('q6Triangle', 'question6')">
+    <span id="q6Triangle" class="triangle" >►</span><span>Can the food I eat give me cavities?</span>
+  </div>
   <div id="question6" class="textContent">
     Certain types of food and drinks can increase your risks of getting cavities. Sweet foods like ice cream and candy and starchy foods provide food for the bacteria that cause cavities. Acidic foods like oranges can also weaken our enamel and make it more vulnerable to cavities. Sweet or acidic drinks can be especially bad for our teeth. Soda and juice, in particular, can be both sweet and acidic at the same time. For example, a 20 oz bottle of Coca Cola has 65 grams of sugar and has a pH of 2.52. Any pH under 5.5 can cause start causing loss of enamel. Sipping soda and eating sugary snacks throughout the day can lead to your mouth's pH being consistently low.
   </div>
 </div>
 <script src="script.js"></script>
 <!-- Fixed Footer -->
-<div id="footer">Oregon State University - CS 290 Project. Icons made by <a target="_blank" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and <a target="_blank" href="https://www.flaticon.com/authors/darius-dan" title="Darius Dan">Darius Dan</a> from <a target="_blank" href="https://www.flaticon.com/" title="Flaticon">Flaticon</a>. Other images sourced from <a target="_blank" href="https://pixabay.com/">Pixabay</a>.</div>
+<div id="footer">
+  Oregon State University - CS 290 Project. Icons made by <a target="_blank" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and <a target="_blank" href="https://www.flaticon.com/authors/darius-dan" title="Darius Dan">Darius Dan</a> from <a target="_blank" href="https://www.flaticon.com/" title="Flaticon">Flaticon</a>. Other images sourced from <a target="_blank" href="https://pixabay.com/">Pixabay</a>.
+</div>
 </body>
 </html>
