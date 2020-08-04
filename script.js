@@ -1,4 +1,3 @@
-
 // Simple picture carousel with fading animation
 
 // Checking if currently on home page
@@ -10,14 +9,14 @@ if ((window.location == "https://alankuo-osu.github.io/CS290-Project/index.html"
 
 // Function for changing slide. Includes parameters for number of slides to change and whether change was done manually.
 function changeSlide(delta, clicked) {
-	let prevSlide = curSlide
-	curSlide = curSlide + delta
+	let prevSlide = curSlide;
+	curSlide = curSlide + delta;
 	if (curSlide > 3) {
-		curSlide = 1
+		curSlide = 1;
 	}
 
 	else if (curSlide < 1) {
-		curSlide = 3
+		curSlide = 3;
 	}
 
 	// Hiding previous slide and re-setting opacity
@@ -44,10 +43,10 @@ function navUnderline() {
 	var navLinks = document.getElementById('navbar').getElementsByTagName('a');
 	for (let link of navLinks) {
 		if (currentUrl == link.getAttribute('href')) {
-			link.style.textDecoration = "underline"
+			link.style.textDecoration = "underline";
 		}
 		else if (currentUrl == "https://alankuo-osu.github.io/CS290-Project/") {
-			document.getElementById('homeLink').style.textDecoration = "underline"
+			document.getElementById('homeLink').style.textDecoration = "underline";
 		}
 	}
 }
@@ -58,24 +57,22 @@ var curTab = 'anatomy'
 function changeTab1(newTab) {
 	document.getElementById(curTab).style.backgroundColor = "#0099ff";
 	document.getElementById(newTab).style.backgroundColor ="#33adff";
-	document.getElementById(curTab +"Content").style.display="none"
+	document.getElementById(curTab +"Content").style.display="none";
 	document.getElementById(newTab+"Content").style.display ="block";
-	curTab = newTab
+	curTab = newTab;
 }
 
 var curTab2 = 'fillings'
 function changeTab2(newTab2) {
 	document.getElementById(curTab2).style.backgroundColor = "#0099ff";
 	document.getElementById(newTab2).style.backgroundColor ="#33adff";
-	document.getElementById(curTab2 +"Content").style.display="none"
+	document.getElementById(curTab2 +"Content").style.display="none";
 	document.getElementById(newTab2+"Content").style.display ="block";
-	curTab2 = newTab2
+	curTab2 = newTab2;
 }
 
-
-
 // API key and url for Bing Search
-var apiKey = 'fb9c3aca1d37437b9eb1842d4ae68c6e'
+var apiKey = 'fb9c3aca1d37437b9eb1842d4ae68c6e';
 var searchUrl = 'https://api.cognitive.microsoft.com/bing/v7.0/localbusinesses/search?mkt=en-US&count=5&q='
 
 // Function for making GET request
@@ -84,7 +81,7 @@ function searchDentist() {
 		let dentistType = document.getElementById('dentistType').value;
 		let city = document.getElementById('City').value;
 		let state = document.getElementById('state').value;
-		let requestUrl = searchUrl + dentistType + "+" + city+"+"+state
+		let requestUrl = searchUrl + dentistType + "+" + city+"+"+state;
 		if (!city) {
 			alert("Please fill out the city field!");
 			event.preventDefault();
@@ -97,7 +94,7 @@ function searchDentist() {
 			let searchResponse = JSON.parse(searchReq.responseText);
 			let resultDiv = document.getElementById('results');
 			if (searchResponse.hasOwnProperty('places')) {
-				var resultList = document.createElement('dl')
+				var resultList = document.createElement('dl');
 				for (let business of searchResponse['places']['value']) {
 					var busName = document.createElement('dt');
 					busName.textContent = business['name'];
@@ -119,7 +116,7 @@ function searchDentist() {
 					busName.appendChild(address2);
 					busName.appendChild(phone);
 
-					resultList.appendChild(busName)
+					resultList.appendChild(busName);
 					while (resultDiv.firstChild && resultDiv.removeChild(resultDiv.firstChild));
 					resultDiv.appendChild(resultList);
 				}
@@ -135,8 +132,8 @@ function searchDentist() {
 
 // Function for rotating triangle and showing text content for expandable text.
 function rotate(triangle, textContent) {
-	var curTriangle = document.getElementById(triangle)
-	var curText = document.getElementById(textContent)
+	var curTriangle = document.getElementById(triangle);
+	var curText = document.getElementById(textContent);
 	if (curTriangle.classList.contains('rotated')) {
 		curTriangle.classList.remove('rotated')
 		curText.style.height="0"
